@@ -1,0 +1,22 @@
+{
+  "name": "<%= answers['module:name'] %>",
+  "description": "<%= answers['module:description'] %>",
+  "version": "0.1.0",
+  "author": "<%= answers['module:author'] %>",
+  "license": "<%= answers['module:license'] %>",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel -e -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --recursive --require babelhook"
+  },
+  "dependencies": {
+    "core-js": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "chai": "*",
+    "istanbul": "*",
+    "mocha": "*"
+  }
+}
