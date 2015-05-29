@@ -10,9 +10,6 @@
     "prepublish": "npm run compile",
     "test": "mocha --recursive --require babelhook"
   },
-  "dependencies": {
-    "core-js": "*"
-  },
   "devDependencies": {
     "babel": "*",
     "chai": "*",
