@@ -13,7 +13,7 @@ describe('app', function () {
 
   it('Should create files', function () {
     assert.file([
-      'src/index.es6.js',
+      'src/index.es6',
       'test/index.es6.js',
       'babelhook.js',
       '.babelrc',
