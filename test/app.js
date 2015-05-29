@@ -7,11 +7,11 @@ describe('app', function () {
     helpers
       .run(path.join(__dirname, '../generators/app'))
       .withOptions({skipInstall: true})
-      .withPrompts({license: 'MIT'})
+      .withPrompts({'module:license': 'MIT'})
       .on('end', done);
   });
 
-  it('creates files', function () {
+  it('Should create files', function () {
     assert.file([
       'src/index.es6',
       'test/index.es6',
