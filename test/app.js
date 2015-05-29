@@ -13,8 +13,8 @@ describe('app', function () {
 
   it('creates files', function () {
     assert.file([
-      'src/index.js',
-      'test/index.js',
+      'src/index.es6',
+      'test/index.es6',
       'babelhook.js',
       '.babelrc',
       '.editorconfig',
