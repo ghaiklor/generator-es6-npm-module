@@ -1,3 +1,3 @@
 require("babel/register")({
-  stage: <%= stage %>
+  stage: 2
 });

@@ -13,8 +13,17 @@ describe('app', function () {
 
   it('creates files', function () {
     assert.file([
+      'src/index.js',
+      'test/index.js',
+      'babelhook.js',
+      '.babelrc',
       '.editorconfig',
-      '.jshintrc'
+      '.gitignore',
+      '.npmignore',
+      'package.json',
+      'README.md',
+      '.travis.yml',
+      'LICENSE'
     ]);
   });
 });
