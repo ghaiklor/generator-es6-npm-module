@@ -8,7 +8,7 @@
   "scripts": {
     "compile": "babel -e -d lib/ src/",
     "prepublish": "npm run compile",
-    "test": "mocha --recursive --require babelhook"
+    "test": "istanbul cover _mocha -- --recursive --require babelhook"
   },
   "devDependencies": {
     "babel": "*",
