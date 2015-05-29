@@ -26,18 +26,17 @@ When project is generated you will get project with that structure:
 
 ```
 |-- my-project # Root of your project
-  |-- lib # Folder where your transpiled code located
-  |-- test # Folder with tests for your module
-  |  |-- index.test.js # Testing your main script
-  |  |-- mocha.opts # File for mocha options
+  |-- lib # Folder where your transpiled code is located
   |-- src # Folder where your ES6 source code is located
      |-- index.es6 # Your main script
+  |-- test # Folder with tests for your module
+  |  |-- index.es6.js # Testing your main script
+  |-- babelhook.js # Hook for Mocha tests
+  |-- .babelrc # Configuration file for Babel
   |-- .editorconfig # editorconfig for IDE with standardized JavaScript code-style
   |-- .gitignore # gitignore template for NodeJS applications
-  |-- .jshintrc # JSHint configuration
   |-- .npmignore # npmignore template with some stuff disabled for publish like test or .travis.yml
   |-- .travis.yml # Travis configuration file with NodeJS 0.10, 0.12 and iojs. Also it sends coverage data to Coveralls
-  |-- index.js # Main script (entry point) because it's defined in package.json
   |-- package.json # package.json template with minimal data here
   |-- README.md # Readme with predefined text based on your answers
 ```
