@@ -14,11 +14,15 @@ describe('app', function () {
   it('Should create files', function () {
     assert.file([
       'src/index.es6',
-      'test/index.es6.js',
+      'test/unit/index.test.js',
+      'test/bootstrap.test.js',
+      'test/mocha.opts',
       'babelhook.js',
       '.babelrc',
+      'CHANGELOG.md',
       '.editorconfig',
       '.gitignore',
+      'index.js',
       '.npmignore',
       'package.json',
       'README.md',
