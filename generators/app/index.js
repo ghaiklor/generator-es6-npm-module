@@ -85,8 +85,10 @@ module.exports = yeoman.generators.Base.extend({
     this.directory('test', 'test');
     this.copy('babelhook.js', 'babelhook.js');
     this.copy('babelrc', '.babelrc');
+    this.copy('CHANGELOG.md', 'CHANGELOG.md');
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
+    this.copy('index.js', 'index.js');
     this.copy('npmignore', '.npmignore');
     this.copy('package.json', 'package.json');
     this.copy('README.md', 'README.md');
