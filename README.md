@@ -25,20 +25,20 @@ npm install -g yo generator-es6-npm-module && yo es6-npm-module
 When project is generated you will get project with that structure:
 
 ```
-|-- my-project # Root of your project
-  |-- lib # Folder where your transpiled code is located
-  |-- src # Folder where your ES6 source code is located
-     |-- index.es6 # Your main script
-  |-- test # Folder with tests for your module
-  |  |-- index.es6.js # Testing your main script
-  |-- babelhook.js # Hook for Mocha tests
-  |-- .babelrc # Configuration file for Babel
-  |-- .editorconfig # editorconfig for IDE with standardized JavaScript code-style
-  |-- .gitignore # gitignore template for NodeJS applications
-  |-- .npmignore # npmignore template with some stuff disabled for publish like test or .travis.yml
-  |-- .travis.yml # Travis configuration file with NodeJS 0.10, 0.12 and iojs. Also it sends coverage data to Coveralls
-  |-- package.json # package.json template with minimal data here
-  |-- README.md # Readme with predefined text based on your answers
+|-- my-project
+  |-- lib
+  |-- src
+     |-- index.es6
+  |-- test
+  |  |-- index.es6.js
+  |-- babelhook.js
+  |-- .babelrc
+  |-- .editorconfig
+  |-- .gitignore
+  |-- .npmignore
+  |-- .travis.yml
+  |-- package.json
+  |-- README.md
 ```
 
 ## License
