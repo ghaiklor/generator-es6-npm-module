@@ -1,0 +1,4 @@
+./test/bootstrap.test.es6
+./test/unit/**/*.test.es6
+--require babelhook
+--recursive

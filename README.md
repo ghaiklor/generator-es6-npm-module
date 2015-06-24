@@ -31,8 +31,8 @@ When project is generated you will get project with that structure:
   |  |-- index.es6
   |-- test
   |  |-- unit
-  |  |  |-- index.test.js
-  |  |-- bootstrap.test.js
+  |  |  |-- index.test.es6
+  |  |-- bootstrap.test.es6
   |  |-- mocha.opts
   |-- .babelrc
   |-- .editorconfig

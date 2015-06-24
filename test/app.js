@@ -14,8 +14,8 @@ describe('app', function () {
   it('Should create files', function () {
     assert.file([
       'src/index.es6',
-      'test/unit/index.test.js',
-      'test/bootstrap.test.js',
+      'test/unit/index.test.es6',
+      'test/bootstrap.test.es6',
       'test/mocha.opts',
       'babelhook.js',
       '.babelrc',
