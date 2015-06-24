@@ -28,16 +28,22 @@ When project is generated you will get project with that structure:
 |-- my-project
   |-- lib
   |-- src
-     |-- index.es6
+  |  |-- index.es6
   |-- test
-  |  |-- index.es6.js
-  |-- babelhook.js
+  |  |-- unit
+  |  |  |-- index.test.js
+  |  |-- bootstrap.test.js
+  |  |-- mocha.opts
   |-- .babelrc
   |-- .editorconfig
   |-- .gitignore
   |-- .npmignore
   |-- .travis.yml
+  |-- babelhook.js
+  |-- CHANGELOG.md
+  |-- index.js
   |-- package.json
+  |-- LICENSE
   |-- README.md
 ```
 
