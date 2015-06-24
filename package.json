@@ -26,7 +26,7 @@
     "yosay": "^1.0.4"
   },
   "devDependencies": {
-    "istanbul": "^0.3.14",
+    "istanbul": "^0.3.15",
     "mocha": "^2.2.5"
   }
 }
