@@ -2,3 +2,4 @@
 ./test/unit/**/*.test.es6
 --require babelhook
 --recursive
+--reporter spec
