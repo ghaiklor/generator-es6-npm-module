@@ -1,10 +1,14 @@
 # generator-es6-npm-module
 
-![Build Status](https://img.shields.io/travis/ghaiklor/generator-es6-npm-module.svg) ![Coverage](https://img.shields.io/coveralls/ghaiklor/generator-es6-npm-module.svg) ![Downloads](https://img.shields.io/npm/dm/generator-es6-npm-module.svg) ![npm version](https://img.shields.io/npm/v/generator-es6-npm-module.svg) ![dependencies](https://img.shields.io/david/ghaiklor/generator-es6-npm-module.svg) ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/generator-es6-npm-module.svg) ![License](https://img.shields.io/npm/l/generator-es6-npm-module.svg)
+![Build Status](https://img.shields.io/travis/ghaiklor/generator-es6-npm-module.svg)
+![Coverage](https://img.shields.io/coveralls/ghaiklor/generator-es6-npm-module.svg)
+![Downloads](https://img.shields.io/npm/dm/generator-es6-npm-module.svg)
+![dependencies](https://img.shields.io/david/ghaiklor/generator-es6-npm-module.svg)
+![dev dependencies](https://img.shields.io/david/dev/ghaiklor/generator-es6-npm-module.svg)
+![npm version](https://img.shields.io/npm/v/generator-es6-npm-module.svg)
+![License](https://img.shields.io/npm/l/generator-es6-npm-module.svg)
 
-> [Yeoman](http://yeoman.io) generator
-
-This generator creates project for you where you can start working with your npm module.
+This generator creates empty npm module with ES6 support and integrated Travis and Coveralls services.
 
 ## Getting Started
 
@@ -26,7 +30,6 @@ When project is generated you will get project with that structure:
 
 ```
 |-- my-project
-  |-- lib
   |-- src
   |  |-- index.es6
   |-- test
