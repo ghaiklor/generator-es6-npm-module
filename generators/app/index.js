@@ -12,13 +12,17 @@ var QUESTIONS = [{
   message: 'Type your module description'
 }, {
   type: 'input',
-  name: 'module:author',
-  message: 'Typo your nickname'
+  name: 'module:author:nickname',
+  message: 'Type your nickname'
+}, {
+  type: 'input',
+  name: 'module:author:fullName',
+  message: 'Typo your full name'
 }, {
   type: 'list',
   name: 'module:license',
   message: 'Choose a license',
-  default: 10,
+  default: 'MIT',
   choices: [
     'Apache-2.0',
     'Artistic-2.0',
@@ -57,7 +61,7 @@ function fetchLicense(license, cb) {
       .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
       .replace(/-+[\d\D]*?-+\n\n/, '')
       .replace(/\[year\]/g, new Date().getFullYear())
-      .replace(/\[fullname\]/g, this.answers['module:author']);
+      .replace(/\[fullname\]/g, this.answers['module:author:fullName']);
 
     this.sourceRoot(sourceRoot);
 
