@@ -2,9 +2,10 @@
   "name": "<%= answers['module:name'] %>",
   "description": "<%= answers['module:description'] %>",
   "version": "0.1.0",
-  "author": "<%= answers['module:author'] %>",
-  "license": "<%= answers['module:license'] %>",
   "main": "index.js",
+  "author": "<%= answers['module:author:nickname'] %>",
+  "repository": "<%= answers['module:author:nickname'] %>/<%= answers['module:name'] %>",
+  "license": "<%= answers['module:license'] %>",
   "scripts": {
     "compile": "babel -e -d lib/ src/",
     "prepublish": "npm run compile",
@@ -14,6 +15,7 @@
     "babel": "*",
     "chai": "*",
     "istanbul": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "sinon": "*"
   }
 }
