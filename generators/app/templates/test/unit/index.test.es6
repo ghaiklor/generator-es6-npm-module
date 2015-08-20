@@ -1,5 +1,7 @@
-let assert = require('chai').assert;
-let module = require('../../');
+import chai from 'chai';
+import module from '../../';
+
+const assert = chai.assert;
 
 describe('Entry Point', () => {
   it('Should properly export', () => {
