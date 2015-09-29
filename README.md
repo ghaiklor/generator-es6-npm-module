@@ -3,9 +3,10 @@
 ![Build Status](https://img.shields.io/travis/ghaiklor/generator-es6-npm-module.svg)
 ![Coverage](https://img.shields.io/coveralls/ghaiklor/generator-es6-npm-module.svg)
 ![Downloads](https://img.shields.io/npm/dm/generator-es6-npm-module.svg)
+![Downloads](https://img.shields.io/npm/dt/generator-es6-npm-module.svg)
+![npm version](https://img.shields.io/npm/v/generator-es6-npm-module.svg)
 ![dependencies](https://img.shields.io/david/ghaiklor/generator-es6-npm-module.svg)
 ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/generator-es6-npm-module.svg)
-![npm version](https://img.shields.io/npm/v/generator-es6-npm-module.svg)
 ![License](https://img.shields.io/npm/l/generator-es6-npm-module.svg)
 
 This generator creates empty npm module with ES6 support and integrated Travis and Coveralls services.
@@ -31,11 +32,11 @@ When project is generated you will get project with that structure:
 ```
 |-- my-project
   |-- src
-  |  |-- index.es6
+  |  |-- index.js
   |-- test
   |  |-- unit
-  |  |  |-- index.test.es6
-  |  |-- bootstrap.test.es6
+  |  |  |-- index.test.js
+  |  |-- bootstrap.test.js
   |  |-- mocha.opts
   |-- .babelrc
   |-- .editorconfig
@@ -44,7 +45,6 @@ When project is generated you will get project with that structure:
   |-- .travis.yml
   |-- babelhook.js
   |-- CHANGELOG.md
-  |-- index.js
   |-- package.json
   |-- LICENSE
   |-- README.md
