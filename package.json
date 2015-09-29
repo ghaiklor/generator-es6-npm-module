@@ -22,11 +22,11 @@
     "ES6"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.20.2",
-    "yosay": "^1.0.5"
+    "yeoman-generator": "0.20.3",
+    "yosay": "1.0.5"
   },
   "devDependencies": {
-    "istanbul": "^0.3.15",
-    "mocha": "^2.2.5"
+    "istanbul": "0.3.21",
+    "mocha": "2.3.3"
   }
 }
