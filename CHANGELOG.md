@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Fix issue with npmignore;
+
 ## 1.1.0
 
 - Migration from ES5 to ES6 syntax;
