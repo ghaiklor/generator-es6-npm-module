@@ -5,7 +5,7 @@ var helpers = require('yeoman-generator').test;
 describe('app', function () {
   before(function (done) {
     helpers
-      .run(path.join(__dirname, '../generators/app'))
+      .run(path.join(__dirname, '../src/app'))
       .withOptions({skipInstall: true})
       .withPrompts({'module:license': 'MIT'})
       .on('end', done);
