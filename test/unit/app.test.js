@@ -12,9 +12,9 @@ describe('app', () => {
 
   it('Should create files', () => {
     assert.file([
-      'src/index.es6',
-      'test/unit/index.test.es6',
-      'test/bootstrap.test.es6',
+      'src/index.js',
+      'test/unit/index.test.js',
+      'test/bootstrap.test.js',
       'test/mocha.opts',
       'babelhook.js',
       '.babelrc',
