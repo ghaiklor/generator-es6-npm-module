@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+- Migration from ES5 to ES6 syntax;
+- Rename all `es6` files to `js` files;
+- Remove `index.js` file from the root of a project;
+
 ## 1.0.0
 
 - ES6 Integration right from the box;
