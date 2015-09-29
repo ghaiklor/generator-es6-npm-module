@@ -11,6 +11,9 @@
     "url": "https://github.com/ghaiklor"
   },
   "scripts": {
+    "clean": "rm -rf ./coverage ./generators",
+    "compile": "npm run clean; cp -r src/ generators/; babel src --out-dir generators",
+    "prepublish": "npm run compile",
     "test": "istanbul cover _mocha"
   },
   "keywords": [
