@@ -1,17 +1,16 @@
-var path = require('path');
-var assert = require('yeoman-generator').assert;
-var helpers = require('yeoman-generator').test;
+import path from 'path';
+import { assert, test } from 'yeoman-generator';
 
-describe('app', function () {
-  before(function (done) {
-    helpers
-      .run(path.join(__dirname, '../src/app'))
+describe('app', () => {
+  before(done => {
+    test
+      .run(path.join(__dirname, '../../src/app'))
       .withOptions({skipInstall: true})
       .withPrompts({'module:license': 'MIT'})
       .on('end', done);
   });
 
-  it('Should create files', function () {
+  it('Should create files', () => {
     assert.file([
       'src/index.es6',
       'test/unit/index.test.es6',
@@ -22,7 +21,6 @@ describe('app', function () {
       'CHANGELOG.md',
       '.editorconfig',
       '.gitignore',
-      'index.js',
       '.npmignore',
       'package.json',
       'README.md',
