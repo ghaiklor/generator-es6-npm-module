@@ -1,8 +1,8 @@
-var path = require('path');
-var yeoman = require('yeoman-generator');
-var yosay = require('yosay');
+import { Base } from 'yeoman-generator';
+import path from 'path';
+import yosay from 'yosay';
 
-var QUESTIONS = [{
+const QUESTIONS = [{
   type: 'input',
   name: 'module:name',
   message: 'Type your module name'
@@ -46,18 +46,16 @@ var QUESTIONS = [{
  * @param {Function} cb Callback function with license content as argument
  */
 function fetchLicense(license, cb) {
-  var username = 'github';
-  var repository = 'choosealicense.com';
-  var branch = 'gh-pages';
-  var cacheRoot = this.cacheRoot();
-  var sourceRoot = this.sourceRoot();
+  let username = 'github';
+  let repository = 'choosealicense.com';
+  let branch = 'gh-pages';
+  let cacheRoot = this.cacheRoot();
+  let sourceRoot = this.sourceRoot();
 
-  this.remote(username, repository, branch, function (error, remote) {
-    if (error) throw new Error(error);
-
+  this.remote(username, repository, branch, (error, remote) => {
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
 
-    var content = this
+    let content = this
       .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
       .replace(/-+[\d\D]*?-+\n\n/, '')
       .replace(/\[year\]/g, new Date().getFullYear())
@@ -66,25 +64,29 @@ function fetchLicense(license, cb) {
     this.sourceRoot(sourceRoot);
 
     cb(content);
-  }.bind(this));
+  });
 }
 
-module.exports = yeoman.generators.Base.extend({
-  prompting: function () {
-    var done = this.async();
+export default class AppGenerator extends Base {
+  constructor(...args) {
+    super(...args);
+  }
+
+  prompting() {
+    let done = this.async();
 
     this.log(yosay('Welcome to the extraordinary ES6 npm module generator!'));
-    this.prompt(QUESTIONS, function (answers) {
+    this.prompt(QUESTIONS, answers => {
       this.answers = answers;
 
-      fetchLicense.call(this, this.answers['module:license'], function (content) {
+      fetchLicense.call(this, this.answers['module:license'], content => {
         this.write('LICENSE', content);
         done();
-      }.bind(this));
-    }.bind(this));
-  },
+      });
+    });
+  }
 
-  writing: function () {
+  writing() {
     this.directory('src', 'src');
     this.directory('test', 'test');
     this.copy('babelhook.js', 'babelhook.js');
@@ -92,14 +94,13 @@ module.exports = yeoman.generators.Base.extend({
     this.copy('CHANGELOG.md', 'CHANGELOG.md');
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
-    this.copy('index.js', 'index.js');
     this.copy('npmignore', '.npmignore');
     this.copy('package.json', 'package.json');
     this.copy('README.md', 'README.md');
     this.copy('travis.yml', '.travis.yml');
-  },
+  }
 
-  install: function () {
+  install() {
     this.npmInstall();
   }
-});
+}
