@@ -2,14 +2,14 @@
   "name": "<%= answers['module:name'] %>",
   "description": "<%= answers['module:description'] %>",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "<%= answers['module:author:nickname'] %>",
   "repository": "<%= answers['module:author:nickname'] %>/<%= answers['module:name'] %>",
   "license": "<%= answers['module:license'] %>",
   "scripts": {
-    "compile": "babel -e -d lib/ src/",
+    "compile": "babel src --out-dir lib",
     "prepublish": "npm run compile",
-    "test": "npm run compile && istanbul cover _mocha"
+    "test": "istanbul cover _mocha"
   },
   "devDependencies": {
     "babel": "*",

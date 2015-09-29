@@ -1,7 +1,5 @@
-import chai from 'chai';
-import module from '../../';
-
-const assert = chai.assert;
+import { assert } from 'chai';
+import module from '../../src/index';
 
 describe('Entry Point', () => {
   it('Should properly export', () => {

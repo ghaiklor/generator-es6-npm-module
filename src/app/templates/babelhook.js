@@ -1,3 +1,1 @@
-require('babel/register')({
-  stage: 2
-});
+require('babel/register');
