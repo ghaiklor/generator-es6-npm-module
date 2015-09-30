@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- Fix issue with non-existing `babelhook.js`;
+
 ## 1.1.1
 
 - Fix issue with npmignore;
