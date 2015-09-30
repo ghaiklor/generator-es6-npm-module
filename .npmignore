@@ -1,5 +1,5 @@
 coverage
 src
 test
-babelhook.js
+/babelhook.js
 .idea
