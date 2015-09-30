@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+- Fix issue with non-existing `src` and `test` folders;
+
 ## 1.1.2
 
 - Fix issue with non-existing `babelhook.js`;
