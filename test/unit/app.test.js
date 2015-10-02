@@ -14,7 +14,7 @@ describe('app', () => {
     assert.file([
       'src/index.js',
       'test/unit/index.test.js',
-      'test/bootstrap.test.js',
+      'test/bootstrap.js',
       'test/mocha.opts',
       'babelhook.js',
       '.babelrc',

@@ -36,7 +36,7 @@ When project is generated you will get project with that structure:
   |-- test
   |  |-- unit
   |  |  |-- index.test.js
-  |  |-- bootstrap.test.js
+  |  |-- bootstrap.js
   |  |-- mocha.opts
   |-- .babelrc
   |-- .editorconfig

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.4
+
+- General improvements;
+
 ## 1.1.3
 
 - Fix issue with non-existing `src` and `test` folders;

@@ -5,19 +5,19 @@ import yosay from 'yosay';
 const QUESTIONS = [{
   type: 'input',
   name: 'module:name',
-  message: 'Type your module name'
+  message: 'Module name'
 }, {
   type: 'input',
   name: 'module:description',
-  message: 'Type your module description'
+  message: 'Module description'
 }, {
   type: 'input',
   name: 'module:author:nickname',
-  message: 'Type your nickname'
+  message: 'Your GitHub username'
 }, {
   type: 'input',
   name: 'module:author:fullName',
-  message: 'Typo your full name'
+  message: 'Your full name'
 }, {
   type: 'list',
   name: 'module:license',
