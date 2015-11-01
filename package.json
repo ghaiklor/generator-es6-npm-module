@@ -29,7 +29,7 @@
     "yosay": "1.0.5"
   },
   "devDependencies": {
-    "babel": "6.0.14",
+    "babel": "6.0.15",
     "istanbul": "0.4.0",
     "mocha": "2.3.3"
   }
