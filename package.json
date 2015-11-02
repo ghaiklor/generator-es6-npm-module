@@ -1,10 +1,12 @@
 {
   "name": "generator-es6-npm-module",
-  "version": "1.1.4",
   "description": "Yeoman generator for starting ES6 npm module with Mocha, Istanbul, Travis, Coveralls",
   "license": "MIT",
   "main": "generators/app/index.js",
-  "repository": "ghaiklor/generator-es6-npm-module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghaiklor/generator-es6-npm-module.git"
+  },
   "author": {
     "name": "Eugene Obrezkov",
     "email": "ghaiklor@gmail.com",
@@ -13,8 +15,10 @@
   "scripts": {
     "clean": "rm -rf ./generators",
     "compile": "npm run clean; cp -r src/ generators/; babel src --out-dir generators",
+    "coveralls": "cat coverage/lcov.info | coveralls",
     "prepublish": "npm run compile",
-    "test": "istanbul cover _mocha"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "keywords": [
     "yeoman-generator",
@@ -29,8 +33,22 @@
     "yosay": "1.0.5"
   },
   "devDependencies": {
-    "babel": "6.0.15",
-    "istanbul": "0.4.0",
-    "mocha": "2.3.3"
+    "babel": "5.8.29",
+    "coveralls": "2.11.4",
+    "cz-conventional-changelog": "1.1.4",
+    "isparta": "3.5.0",
+    "mocha": "2.3.3",
+    "semantic-release": "4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "tag": "latest"
+  },
+  "release": {
+    "branch": "master"
   }
 }
