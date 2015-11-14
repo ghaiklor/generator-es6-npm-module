@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "yeoman-generator": "0.21.1",
-    "yosay": "1.0.5"
+    "yosay": "1.1.0"
   },
   "devDependencies": {
     "babel": "5.8.34",
