@@ -9,13 +9,13 @@
   "scripts": {
     "compile": "babel src --out-dir lib",
     "prepublish": "npm run compile",
-    "test": "istanbul cover _mocha"
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "devDependencies": {
     "babel-cli": "*",
     "babel-preset-es2015-node4": "*",
     "chai": "*",
-    "istanbul": "*",
+    "isparta": "*",
     "mocha": "*",
     "sinon": "*"
   }
