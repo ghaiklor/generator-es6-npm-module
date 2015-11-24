@@ -68,8 +68,8 @@ function fetchLicense(license, cb) {
 }
 
 export default class AppGenerator extends Base {
-  constructor(...args) {
-    super(...args);
+  constructor(args, options) {
+    super(args, options);
   }
 
   prompting() {
