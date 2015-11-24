@@ -12,7 +12,8 @@
     "test": "istanbul cover _mocha"
   },
   "devDependencies": {
-    "babel": "*",
+    "babel-cli": "*",
+    "babel-preset-es2015-node4": "*",
     "chai": "*",
     "istanbul": "*",
     "mocha": "*",
