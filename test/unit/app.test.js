@@ -5,7 +5,6 @@ describe('app', () => {
   before(done => {
     test
       .run(path.join(__dirname, '../../src/app'))
-      .withOptions({skipInstall: true})
       .withPrompts({'module:license': 'MIT'})
       .on('end', done);
   });
@@ -14,11 +13,8 @@ describe('app', () => {
     assert.file([
       'src/index.js',
       'test/unit/index.test.js',
-      'test/bootstrap.js',
       'test/mocha.opts',
-      'babelhook.js',
       '.babelrc',
-      'CHANGELOG.md',
       '.editorconfig',
       '.gitignore',
       '.npmignore',

@@ -89,9 +89,7 @@ export default class AppGenerator extends Base {
   writing() {
     this.directory('src', 'src');
     this.directory('test', 'test');
-    this.copy('babelhook.js', 'babelhook.js');
     this.copy('babelrc', '.babelrc');
-    this.copy('CHANGELOG.md', 'CHANGELOG.md');
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
     this.copy('npmignore', '.npmignore');
