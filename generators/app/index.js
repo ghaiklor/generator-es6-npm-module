@@ -1,6 +1,8 @@
-import { Base } from 'yeoman-generator';
-import path from 'path';
-import yosay from 'yosay';
+"use strict";
+
+const Base = require('yeoman-generator').Base;
+const path = require('path');
+const yosay = require('yosay');
 
 const QUESTIONS = [{
   type: 'input',
@@ -46,16 +48,16 @@ const QUESTIONS = [{
  * @param {Function} cb Callback function with license content as argument
  */
 function fetchLicense(license, cb) {
-  let username = 'github';
-  let repository = 'choosealicense.com';
-  let branch = 'gh-pages';
-  let cacheRoot = this.cacheRoot();
-  let sourceRoot = this.sourceRoot();
+  const username = 'github';
+  const repository = 'choosealicense.com';
+  const branch = 'gh-pages';
+  const cacheRoot = this.cacheRoot();
+  const sourceRoot = this.sourceRoot();
 
   this.remote(username, repository, branch, (error, remote) => {
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
 
-    let content = this
+    const content = this
       .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
       .replace(/-+[\d\D]*?-+\n\n/, '')
       .replace(/\[year\]/g, new Date().getFullYear())
@@ -67,13 +69,9 @@ function fetchLicense(license, cb) {
   });
 }
 
-export default class AppGenerator extends Base {
-  constructor(args, options) {
-    super(args, options);
-  }
-
+module.exports = class AppGenerator extends Base {
   prompting() {
-    let done = this.async();
+    const done = this.async();
 
     this.log(yosay('Welcome to the extraordinary ES6 npm module generator!'));
     this.prompt(QUESTIONS, answers => {
@@ -101,4 +99,4 @@ export default class AppGenerator extends Base {
   install() {
     this.npmInstall();
   }
-}
+};
