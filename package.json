@@ -27,7 +27,7 @@
     "ES6"
   ],
   "dependencies": {
-    "yeoman-generator": "0.22.4",
+    "yeoman-generator": "0.22.5",
     "yosay": "1.1.0"
   },
   "devDependencies": {
