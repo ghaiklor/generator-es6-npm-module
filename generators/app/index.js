@@ -58,7 +58,7 @@ function fetchLicense(license, cb) {
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
 
     const content = this
-      .read(['_licenses/', license.toLowerCase(), '.html'].join(''))
+      .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
       .replace(/-+[\d\D]*?-+\n\n/, '')
       .replace(/\[year\]/g, new Date().getFullYear())
       .replace(/\[fullname\]/g, this.answers['module:author:fullName']);
