@@ -31,7 +31,7 @@
     "yosay": "1.2.1"
   },
   "devDependencies": {
-    "coveralls": "2.11.15",
+    "coveralls": "2.13.0",
     "cz-conventional-changelog": "1.2.0",
     "istanbul": "0.4.5",
     "mocha": "3.2.0",
