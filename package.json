@@ -34,7 +34,7 @@
     "coveralls": "2.13.1",
     "cz-conventional-changelog": "1.2.0",
     "istanbul": "0.4.5",
-    "mocha": "3.3.0",
+    "mocha": "3.4.0",
     "semantic-release": "6.3.6",
     "yeoman-assert": "2.2.2",
     "yeoman-test": "1.6.0"
