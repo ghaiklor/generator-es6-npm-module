@@ -16,7 +16,9 @@
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "istanbul cover _mocha"
+    "test": "istanbul cover _mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "yeoman-generator",
@@ -28,7 +30,8 @@
   ],
   "dependencies": {
     "yeoman-generator": "4.7.2",
-    "yosay": "2.0.2"
+    "yosay": "2.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "coveralls": "3.0.8",
@@ -49,5 +52,6 @@
   },
   "release": {
     "branch": "master"
-  }
+  },
+  "snyk": true
 }
