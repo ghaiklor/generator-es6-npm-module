@@ -29,7 +29,7 @@
     "ES6"
   ],
   "dependencies": {
-    "yeoman-generator": "4.13.0",
+    "yeoman-generator": "5.0.0",
     "yosay": "2.0.2",
     "snyk": "^1.336.0"
   },
